@@ -1,0 +1,111 @@
+body {
+  background-color: whitesmoke;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: darkcyan;
+  box-shadow: 30px 30px 10px 10px #1b5254;
+  border-radius: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.task-form input,
+.task-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  background: #f8f9fa;
+}
+
+.task-item.completed h3 {
+  text-decoration: line-through;
+}
+
+.task-info {
+  flex-grow: 1;
+}
+
+.task-meta {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-controls {
+  margin: 20px 0;
+}
+
+.filter-controls select {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 20px;
+}
